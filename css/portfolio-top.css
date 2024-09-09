@@ -1,0 +1,722 @@
+@charset "UTF-8";
+/* CSS Document */
+a {
+	text-decoration: none;	
+	cursor: pointer; 
+	}
+a.u-line {
+	text-decoration: none;	
+	color:inherit;
+	position: relative; 
+	cursor: pointer; 
+	}
+a.u-line::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 6px; 
+  bottom: 0px;
+  left: 0;
+  background-color: #c8ea55; 
+  transition: width 0.4s cubic-bezier(0.55, 0.05, 0.31, 0.96);
+  border-radius: 1rem;
+  z-index: -1;
+}
+a.u-line:hover::after {
+  width: 103%; 
+}
+p{
+	letter-spacing: .05rem;
+}
+img {
+	width: 100%;
+}
+ul {
+    list-style: none;
+}
+body {
+	line-height:1;
+	font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    margin: 0 auto;
+	display: block;
+	font-size:1em;
+	font-weight: normal;
+	letter-spacing: .05rem;
+}	
+::selection {
+background:#333;
+color: #e2e2e2;
+}
+::-moz-selection {
+background:#333;
+color: #e2e2e2;
+}
+@media only screen and (max-width: 780px) {
+  .pcOnly {
+    display: none; } }
+
+.spOnly {
+  display: none; }
+  @media only screen and (max-width: 780px) {
+    .spOnly {
+      display: block; } }
+.header {
+	width: 100%;  
+}
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 9% 30px 4.5%;
+}
+.headerLogo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+	/*visibility: hidden;*/
+}
+.headerNav {
+    display: flex;
+	justify-content: space-around;
+    align-items: flex-end;
+    width: 45%;
+}
+a.linkHome {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+a.navLinks {
+}
+p.navLinksTxt {
+    margin: 0 .3rem;
+	font-size: 1.1rem;
+}
+.mainTop-contents {
+}
+
+/*top*/
+.mainTopBlackBlock {
+    position: relative;
+}
+.mainTopBlackTxt {
+    position: absolute;
+	content: '';
+    background-color: #000000d9;
+    width: 20px;
+    height: 25vh;
+	z-index: 1;
+	margin-top: 19vh;
+}
+@media only screen and (max-width: 768px) {
+.mainTopBlackTxt {
+	top: 0vw;
+    width: 5px;
+   }
+}
+.mainTopScroll {
+    position: absolute;
+    writing-mode: vertical-rl;
+	top: 62vh;
+	left: 3%;
+}
+p.scroll{
+	margin: 0;
+}
+.mainTopArea{
+	position: relative;
+	background-image: url(/voice1121/test/images/stone_bg.png);
+}
+.mainVisualArea{
+	height: 89vh;
+    display: flex;
+    margin: 0 auto;
+	width: 100%;
+	position: relative;
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+.mainVisualArea {
+	height: 100%;
+	width: 90%;
+   }
+}
+.mainTitleBox{
+	display: flex;
+	position: absolute;
+    top: 30%;
+	left: 12%;
+	flex-direction: column;
+	justify-content: center;
+    align-items: flex-start;
+	width: 88%;
+}
+@media only screen and (max-width: 768px) {
+.mainTitleBox {
+	width: 25%;
+	writing-mode: vertical-rl;
+    top: 13%;
+    left: -9%;   }
+}
+.mainVisualBox{
+	lign-items: flex-end;
+	z-index: 2;
+}
+@media only screen and (max-width: 768px) {
+.mainVisualBox {
+	width: 100%;
+   }
+}
+@media only screen and (max-width: 768px) {
+.main-randamimg {
+	display: flex;
+    justify-content: flex-end;
+   }
+}
+.main-randamimg img{
+	width: 100%;
+	height: 70vh;
+}
+@media only screen and (max-width: 768px) {
+.main-randamimg img {
+	width: 85%;
+	height: auto;
+   }
+}
+h1{
+	font-size:7vw;
+	font-family: Helvetica Neue;
+	font-weight:600;
+	z-index: 1;
+	display: block;
+    line-height: 40%;
+	color:  #333;
+	margin: 0;
+	letter-spacing: .2rem;
+}
+@media only screen and (max-width: 768px) {
+h1 {
+	font-size:8vh;
+	margin: 0rem;
+	transform: scale(1, 0.85);
+	line-height: 70%;
+   }
+}
+span.headername {
+    font-size: 10rem;
+    font-family: helvetica Neue;
+    font-weight: 100;
+	color: #333;
+	opacity: 30%;
+}
+@media only screen and (max-width: 768px) {
+span.headername  {
+	font-size:2rem;
+   }
+}
+.headernameSub{
+	font-size: 2vw;
+    font-weight: 400;
+    font-family: Helvetica Neue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+	width: 67%;
+}
+.headernameSub::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0; 
+    background-color: #333;
+    bottom: 5%;
+    right: 0;
+    animation: stretchLine 2.5s ease 1.5s forwards; 
+}
+@keyframes stretchLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50.5vw;
+    }
+}
+.mainSubTitleBox {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 33.5vh;
+    width: 100%;
+    height: 55.5vh;
+}
+.mainSubTitleName {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+	font-size: 1.1rem;
+    letter-spacing: .05rem;
+	padding-bottom: 5vh;
+	position: relative;
+}
+.mainSubTitleName::after {
+    position: absolute;
+    content: '';
+    height: 0; /* 初期状態では高さを0に */
+    width: 2px;
+    background-color: #333;
+    bottom: 0; /* 要素を下端から開始 */
+    animation: growLine 1.5s ease 3s forwards; /* アニメーションの設定 */
+}
+@keyframes growLine {
+    0% {
+        height: 0; /* 初期状態 */
+    }
+    100% {
+        height: 57.5vh; /* 最終状態 */
+    }
+}
+.mainSubTitleName ul {
+    padding-right: 2vw;
+	position: absolute;
+    top: 8.5vh;
+}
+li.mainJobTitile {
+    text-align: right;
+	padding-bottom: 2.5vh;
+}
+
+.mainSubTitleNumberBox {
+    width: calc(33px + 3% + 2.8%);
+}
+span.mainSubTitleNumber{
+    align-content: space-around;
+    position: absolute;
+    top: 4.4vh;
+    padding: 0 2vw 1vh 2vw;
+}
+.mainBackGroundArea {
+    height: 10vh;
+    z-index: 1;
+	/*bottom: 7vh;*/
+	transition: width 2s cubic-bezier(0.69, 0.03, 0.46, 1.09);
+}
+@media only screen and (max-width: 768px) {
+.mainBackGroundArea  {
+	height: 18vh;
+	bottom: 5vh;
+   }
+}
+.mainBackGroundBox {
+    position: absolute;
+	top: 75vh;
+    right: 0;
+    height: 10vh;
+    background: #000000d9;
+    z-index: 1;
+	transform-origin: right; /* 右側を基点に変形 */
+        transition: width 2s cubic-bezier(0.69, 0.04, 0.32, 1.01);
+}
+
+/*about*/
+.aboutme-contentsBox {
+	position: relative;
+	padding-top: 12rem;
+}
+.aboutme-contentsArea {
+    width: 78%;
+    margin: 0 auto;
+	display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+.aboutme-contentsArea  {
+	width: 85%;
+	flex-direction: column; 
+	margin-bottom: 1.5rem;}
+}
+.aboutme-TitleBox {
+    width: 35%;
+}
+@media only screen and (max-width: 768px) {
+.aboutme-TitleBox  {
+    width: 100%;
+   }
+}
+.aboutmeTxtBox{
+	width: 65%;
+}
+@media only screen and (max-width: 768px) {
+.aboutmeTxtBox  {
+    width: 100%;
+   }
+}
+h2.aboutmeTitle {
+    font-size: 3rem;
+	font-weight: 400;
+	margin: 0;
+	color:  #333;
+	font-family: Helvetica Neue;
+}
+.aboutmeTxtSub p.aboutName{
+	font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+    letter-spacing: 0.05em;
+}
+@media only screen and (max-width: 768px) {
+.aboutmeTxtSub p.aboutName  {
+    margin-top: 4rem;
+	margin-bottom: 1rem;
+   }
+}
+.aboutmeTxtSub span{
+	font-size: 1rem;
+    padding-left: 1rem;
+	letter-spacing: .05em;
+	font-weight: 100;
+}
+.aboutmeTxt p.aboutPlofile{
+	line-height: 2.5;
+	margin: .3rem 0;
+}
+@media only screen and (max-width: 768px) {
+.aboutmeTxt p.aboutPlofile {
+	line-height: 2;
+	font-size: .8em;
+   }
+}
+.aboutme-leadMoreArea {
+    margin: 2.5rem auto 0;
+	display: flex;
+	width: 78%;
+}
+
+/*leanmore*/
+.aboutme-leadMoreArea {
+  position: relative;
+}
+.learnMore {
+  position: relative;
+  display: inline-block;
+}
+.aboutme-contentsBox::before {
+  content: '';
+  position: absolute;
+  width: 10vw; 
+  height: 2px;
+  background-color: black;
+  bottom: 2%; 
+  left: 0; /* 固定 */
+  transform: translateY(50%);
+  transform-origin: left; 
+  transition: width 0.3s ease;
+}
+.aboutme-contentsBox.hovered::before {
+  width: 11.5vw; 
+}
+.fadeInUp2.active {
+  color: inherit;
+  font-size: 1.2rem; 
+  letter-spacing: .05em;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* テキストの移動アニメーション */
+  text-decoration: underline;
+  text-decoration-color: #c8ea55;
+  border-width: 6px;
+  text-decoration-thickness: 5px;
+  border-radius: 1rem;
+  display: inline-block; /* インラインブロックで表示 */
+  padding: 0 .3rem;
+  text-underline-offset: 1px;
+}
+.fadeInUp2.active:hover {
+  transform: translateX(2.5vw); /* ホバー時にテキストを右に1vw移動 */
+}
+@media only screen and (max-width: 768px) {
+.fadeInUp2.active {
+  font-size: 1rem;
+   }
+}
+/*leanmoreここまで*/
+
+
+/*works*/
+.works-contentsBox {
+    padding: 12rem 0;
+    margin: 12rem 0;
+    position: relative;
+}
+.works-contentsBox:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86%;
+    height: 1px;
+    background-color: #e2e2e2;
+}
+.works-contentsArea {
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+.works-contentsArea {
+    width: 85%;
+	flex-direction: column;
+   }
+}
+.works-TitleBox {
+    width: 50%;
+}
+h2.worksTitle {
+    font-size: 4rem;
+	font-weight: 400;
+	margin: 0;
+	color:  #333;
+}
+.worksListArea {
+    width: 78%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+.worksListArea {
+    width: 85%;
+   }
+}
+.worksListBox {
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+.worksListBox {
+    width: 100%;
+	flex-direction: column;
+   }
+}.worksList-Column {
+    width: calc((100% - 80px) / 3);
+    height: auto;
+	border: solid #ececec;
+}
+@media only screen and (max-width: 768px) {
+.worksList-Column {
+    width: 100%;
+   }
+}
+/*leanmore*/
+.works-contentsBox::before {
+  content: '';
+  position: absolute;
+  width: 10vw; 
+  height: 2px;
+  background-color: black;
+  top: 97%; 
+  left: 0; /* 固定 */
+  transform: translateY(50%);
+  transform-origin: left; 
+  transition: width 0.3s ease;
+}
+.works-contentsBox.hovered::before {
+  width: 12vw; 
+}
+/*leanmoreここまで*/
+
+/*scroll*/
+.scroll {
+    position: absolute;
+    height: 0;
+    width: 2px;
+    background-color: #000;
+    left: 3.9%;
+    bottom: -20vh;
+    writing-mode: vertical-rl;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.9,0,.1,1);
+    transition-delay: 2.3s;
+    z-index: 2
+}
+.scroll {
+    height: 71px
+}
+.scroll:before {
+    position: absolute;
+    content: "scroll";
+    font-size: 1.2rem;
+    letter-spacing: .05em;
+    bottom: 8vh;
+    left: 78%;
+    transform: translate(-60%,10px);
+    opacity: 0;
+    transition: all ease .5s;
+    transition-delay: 2.8s
+}
+.scroll:before {
+    opacity: 1;
+    transform: translate(-60%,0)
+}
+.scroll:after {
+    content: "";
+    position: absolute;
+    bottom: 8vh;
+    left: -12px;
+    width: 4px;
+    height: 50px;
+    z-index: -1;
+    background-color: #c8ea55;
+    transform: scale(1,0);
+    transform-origin: left bottom;
+    transition: -webkit-transform .4s cubic-bezier(.08,.92,.35,1);
+    transition: transform .4s cubic-bezier(.08,.92,.35,1);
+    transition: transform .4s cubic-bezier(.08,.92,.35,1),-webkit-transform .4s cubic-bezier(.08,.92,.35,1)
+}
+.scroll:hover:after {
+    transform-origin: left top;
+    transform: scale(1,1)
+}
+.scroll span.line {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+ .scroll span.line:after {
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    -webkit-animation: arrow 1.4s ease 0s infinite normal;
+    animation: arrow 1.4s ease 0s infinite normal;
+    animation-delay: 4.2s
+}
+@keyframes arrow {
+    0% {
+        top: -100%
+    }
+    40% {
+        top: 100%
+    }
+    100% {
+        top: 100%
+    }
+}
+/*scrollここまで*/
+
+/*footer*/
+.footer {
+    position: relative;
+    background-image: url(/voice1121/test/images/stone_bg.png);
+}
+.footerLogo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* ハンバーガーメニューのスタイル */
+.menu-icon {
+	width: 33px;
+    height: 41px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000d9;
+    padding: 3% 2.8%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-icon .bar {
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: #fff; /* ハンバーガーアイコンの棒の色 */
+    transition: 0.3s;
+}
+
+/* ホバー時に2番目のバーを回転させる */
+.menu-icon:hover .bar:nth-child(2) {
+    transform: rotate(-388.1deg);
+    height: 43px;
+}
+
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(10px, -4px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(-12px, -6px);
+}
+
+/* ナビゲーションメニューのスタイル */
+.nav-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -100%; /* 初期状態では画面外に配置 */
+    width: 75%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    color: #adadad; /* メニュー文字のテキスト色 */
+    font-size: 1.5rem; /* フォントサイズの設定 */
+    transition: right 0.5s ease; /* スライドインのアニメーション */
+}
+
+.nav-menu.active {
+    right: 0; /* 画面内にスライドイン */
+}
+
+/* メニューアイテムのスタイル */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 40px 0; /* アイテム間のマージン */
+}
+
+.nav-menu ul li a {
+    color: #adadad; /* メニューアイテムのリンク色 */
+    text-decoration: none; /* 下線を消す */
+}
+
+/* PC版のスタイル */
+@media (min-width: 769px) {
+    .nav-menu {
+        width: 50%; /* PC版の表示幅を50%に設定 */
+    }
+}
+
+/* メニュー外をクリックした時にメニューを閉じるためのスタイル */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+.overlay.active {
+    display: block;
+}
