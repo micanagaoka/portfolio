@@ -5,10 +5,13 @@ export const config = {
 export default function middleware(req) {
   const auth = req.headers.get('authorization');
   
+  const username = process.env.BASIC_AUTH_USERNAME;
+  const password = process.env.BASIC_AUTH_PASSWORD;
+
   if (auth) {
-    const [username, password] = atob(auth.split(' ')[1]).split(':');
+    const [providedUsername, providedPassword] = atob(auth.split(' ')[1]).split(':');
     
-    if (username === 'your-username' && password === 'your-password') {
+    if (providedUsername === username && providedPassword === password) {
       return new Response(null, { status: 200 });
     }
   }
