@@ -1,29 +1,25 @@
+import { next } from "@vercel/edge";
+
 export const config = {
-  matcher: '/(.*)',
+  matcher: "/",
 };
 
-export default async function middleware(req) {
-  const auth = req.headers.get('authorization');
-  
-  const username = process.env.BASIC_AUTH_USERNAME;
-  const password = process.env.BASIC_AUTH_PASSWORD;
+export default function middleware(request) {
+  const authorizationHeader = request.headers.get("authorization");
 
-  if (auth) {
-    const [scheme, encoded] = auth.split(' ');
-    
-    if (scheme === 'Basic') {
-      const [providedUsername, providedPassword] = atob(encoded).split(':');
-      
-      if (providedUsername === username && providedPassword === password) {
-        return new Response('Authenticated', { status: 200 });
-      }
+  if (authorizationHeader) {
+    const basicAuth = authorizationHeader.split(" ")[1];
+    const [user, password] = atob(basicAuth).toString().split(":");
+
+    if (user === process.env.BASIC_AUTH_USER && password === process.env.BASIC_AUTH_PASSWORD) {
+      return next();
     }
   }
 
-  return new Response('Unauthorized', {
+  return new Response("Basic Auth required", {
     status: 401,
     headers: {
-      'WWW-Authenticate': 'Basic realm="Secure Area"'
-    }
+      "WWW-Authenticate": 'Basic realm="Secure Area"',
+    },
   });
 }
