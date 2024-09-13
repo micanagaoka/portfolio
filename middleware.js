@@ -1,20 +1,22 @@
-import { NextResponse } from 'next/server';
-
 export const config = {
-  matcher: '/(.*)'
-}
+  matcher: '/(.*)',
+};
 
-export default function middleware(req) {
+export default async function middleware(req) {
   const auth = req.headers.get('authorization');
   
   const username = process.env.BASIC_AUTH_USERNAME;
   const password = process.env.BASIC_AUTH_PASSWORD;
 
   if (auth) {
-    const [providedUsername, providedPassword] = atob(auth.split(' ')[1]).split(':');
+    const [scheme, encoded] = auth.split(' ');
     
-    if (providedUsername === username && providedPassword === password) {
-      return NextResponse.next();
+    if (scheme === 'Basic') {
+      const [providedUsername, providedPassword] = atob(encoded).split(':');
+      
+      if (providedUsername === username && providedPassword === password) {
+        return new Response(null, { status: 200 });
+      }
     }
   }
 
