@@ -1,8 +1,0 @@
-{
-  "functions": {
-    "middleware.js": {
-      "runtime": "edge",
-      "maxDuration": 10
-    }
-  }
-}
