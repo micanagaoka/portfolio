@@ -1,3 +1,5 @@
+import { NextResponse } from 'next/server';
+
 export const config = {
   matcher: '/(.*)'
 }
@@ -12,7 +14,7 @@ export default function middleware(req) {
     const [providedUsername, providedPassword] = atob(auth.split(' ')[1]).split(':');
     
     if (providedUsername === username && providedPassword === password) {
-      return new Response(null, { status: 200 });
+      return NextResponse.next();
     }
   }
 
