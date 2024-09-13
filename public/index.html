@@ -1,7 +1,252 @@
-echo "<!DOCTYPE html>
-<html>
-<head
-><title>Test</title>
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>長岡美香のportfolio</title>
+<script type="application/ld+json"></script>
+<meta name="keywords" content="portfolio">
+<meta name="description" content="portfolio">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/css/portfolio-top.css" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 </head>
-<body></body>
-</html>" > public/index.html
+<body>
+	<div class="mainTop-contents">
+		<div class="mainTopArea">
+			<div class="header">
+				<div class="headerBox">
+					<div class="headerNav">
+						<a class="navLinks u-line" href="#">
+							<p class="navLinksTxt">Home</p>
+						</a>
+						<a class="navLinks u-line" href="#about">
+							<p class="navLinksTxt">About Me</p>
+						</a>
+						<a class="navLinks u-line" href="#works">
+							<p class="navLinksTxt">Works</p>
+						</a>
+						<a class="navLinks u-line" href="mailto:searchanddestroy7221@gmail.com">
+							<p class="navLinksTxt">Contact</p>
+						</a>		
+					</div>
+				</div>
+				<!--div class="headerBox">
+					<div class="headerLogo">
+						<a class="homeTop" href="/">
+							<img src="/voice1121/test/images/logo.png" alt="logoicon">
+						</a>
+					</div>		
+					<div class="headerNav">
+						<a class="navLinks u-line" href="#">
+							<p class="navLinksTxt">Home</p>
+						</a>
+						<a class="navLinks u-line" href="#about">
+							<p class="navLinksTxt">About Me</p>
+						</a>
+						<a class="navLinks u-line" href="#works">
+							<p class="navLinksTxt">Works</p>
+						</a>
+						<a class="navLinks u-line" href="mailto:searchanddestroy7221@gmail.com">
+							<p class="navLinksTxt">Contact</p>
+						</a>		
+					</div>
+				</div-->
+				
+				<div class="overlay" id="overlay"></div>
+				<div class="menu-icon" id="menuIcon">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+				<nav class="nav-menu" id="navMenu">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="/about">About me</a></li>
+						<li><a href="/works">works</a></li>
+						<li><a href="mailto:searchanddestroy7221@gmail.com">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mainTopBlackBlock">
+				<div class="mainTopBlackTxt"></div>
+				<div class="mainTopScroll">
+					<a class="scrollTab u-line" href="#about"><div class="scroll">
+						<span class="line"></span>
+					</div></a>
+				</div>
+			</div>
+<!--HEADER-->		
+			<div class="mainVisualArea">
+				<div class="mainTitleBox">
+					<h1><span class="headername">Portfolio</span><br>
+						&ensp;MIKA NAGAOKA<br>
+					</h1>
+					<div class="headernameSub">Profile-website</div>
+				</div>
+				<div class="mainSubTitleBox">
+					<div class="mainSubTitleName">
+						<ul>
+							<li class="mainJobTitile">Designer</li>
+							<li class="mainJobTitile">Cording</li>
+							<li class="mainJobTitile">Direction</li>
+							<li class="mainJobTitile">Illust</li>
+						</ul>
+					</div>
+					<div class="mainSubTitleNumberBox">
+						<span class="mainSubTitleNumber">2024</span>
+					</div>
+				</div>
+				<div class="mainBackGroundArea">
+					<div class="mainBackGroundBox" id="skill1" style="width: 0%;"></div>
+				</div>
+			</div>
+		</div>	
+<!--ABOUT ME-->		
+		<div class="aboutme-contentsBox" id="about">
+			<div class="aboutme-contentsArea">
+				<div class="aboutme-TitleBox">
+					<h2 class="aboutmeTitle">
+						About Me
+					</h2>
+					<a class="homeTop" href="/">
+						<img src="/images/about.png" alt="about">
+					</a>
+				</div>
+				<div class="aboutmeTxtBox">
+					<div class="aboutmeTxtSub">
+						<p class="aboutName">長岡 美香<span>Nagaoka Mika</span></p>
+						<div class="aboutmeTxt">
+							<p class="aboutPlofile">HPやLPの制作をはじめとしたWEB全般を担当しておりました。<br>
+							デザインにおいては、「わかりやすく」「使いやすく」、そして「楽しい！」をモットーに、シンプルで視認性の高いデザイン、ユーザーが直感的に操作できる快適で魅力的なウェブサイトを提供することを常に目指しています。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aboutme-leadMoreArea">
+				<div class="learnMore inview2 inview3 animStart lineStart delay">
+					<a class="fadeInUp2 active" href="">
+						Lead More</a>
+				</div>
+			</div>
+		</div>
+<!--WORKS-->		
+		<div class="works-contentsBox">
+			<div class="works-contentsArea">
+				<div class="works-TitleBox">
+					<h2 class="worksTitle">
+						Works
+					</h2>
+				</div>
+				<div class="aboutmeTxtBox">
+					<div class="aboutmeTxtSub">
+						<!--p>長岡 美香<span>Nagaoka Mika</span></p-->
+						<div class="aboutmeTxt">
+							<p>制作会社にてHP・LP制作など、WEB全般のお仕事をしておりました。<br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="worksListArea">
+				<div class="worksListBox">
+					<div class="worksList-Column">
+						<div class="imageBox">
+							<img src="/images/work_thumb_potenza.jpg" alt="mainimages">
+						</div>
+						<div class="worksTitleBox">
+							<div class="worksTextBox">
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div class="worksList-Column">
+						<div class="">
+							<img src="/images/work_thumb_superGT.jpg" alt="mainimages">
+						</div>
+					</div>
+					<div class="worksList-Column">
+						<div class="">
+							<img src="/images/work_thumb_encore.jpg" alt="mainimages">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aboutme-leadMoreArea">
+				<div class="learnMore inview2 inview3 animStart lineStart delay">
+					<a class="fadeInUp2 active" href="">
+						More Works</a>
+				</div>
+			</div>
+		</div>
+<!--footer-->		
+		<div class="footer">
+			<div class="footerBox">
+				<div class="footerLogo">
+					<a class="homeTop" href="/">
+						<img src="/voice1121/test/images/logo.png" alt="logoicon">
+					</a>
+				</div>		
+				<div class="footerNav">
+					<a class="navLinks" href="#about">
+						<p class="navLinksTxt">About Me</p>
+					</a>
+					<a class="navLinks" href="#works">
+						<p class="navLinksTxt">Works</p>
+					</a>
+					<a class="navLinks" href="#thisSite">
+						<p class="navLinksTxt">This Site</p>
+					</a>		
+					<a class="navLinks" href="mailto:searchanddestroy7221@gmail.com">
+						<p class="navLinksTxt">Contact</p>
+					</a>		
+				</div>
+			</div>
+		</div>
+	</div>	
+<script>
+	window.onload = function() {
+    setTimeout(() => {
+        const mainBackGroundBox = document.getElementById('skill1');
+        mainBackGroundBox.style.width = '88%';  // 幅
+    }, 1000); // 1秒後に開始
+}
+</script>
+<script>
+	document.querySelector('.fadeInUp2.active').addEventListener('mouseover', function() {
+  document.querySelector('.aboutme-contentsBox').classList.add('hovered');
+});
+
+document.querySelector('.fadeInUp2.active').addEventListener('mouseout', function() {
+  document.querySelector('.aboutme-contentsBox').classList.remove('hovered');
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.querySelector('.menu-icon');
+    const navMenu = document.querySelector('.nav-menu');
+    const overlay = document.querySelector('.overlay');
+
+    menuIcon.addEventListener('click', function() {
+        menuIcon.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function() {
+        menuIcon.classList.remove('active');
+        navMenu.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
+
+</script>
+
+</body>
+	<!--end container-->
+</html>
