@@ -1,0 +1,693 @@
+@charset "UTF-8";
+/* CSS Document */
+.headerBox-Dsub{
+	height: calc(41px + 6%);
+	padding-left: calc(33px + 5.6%);
+}
+@media only screen and (max-width: 768px) {
+.headerBox-Dsub{
+	padding-left: 5%;	
+	}
+}
+.headerBox-Dsub.pcOnly {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+.headerBox-Dsub.pcOnly {
+      display: none; } 
+}
+@media only screen and (max-width: 768px) {
+.headerBox-Dsub.spOnly {
+    height: calc(25px + 7vw); 
+    display: flex;
+    align-items: flex-end;} 
+}
+.about-Top {
+    margin: 10% calc(33px + 5.6%) 0 calc(33px + 5.6%);
+    padding: 1rem 0 8rem 0;
+    border-bottom: solid 1px #e2e2e2;
+}
+@media only screen and (max-width: 992px) {
+	.about-Top {
+		margin:12% calc(33px + 5.6%)  0 5%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.about-Top {
+		margin:12% 5% 0 5%;
+	}
+}
+.about-Top::after {
+    content: '';
+    position: absolute;
+    width: calc(33px + 5.6%);
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    border-left: solid 2px #333;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    animation: growLine 1.5s ease 2s forwards;
+}
+@media only screen and (max-width: 768px) {
+.about-Top::after {
+    width: 0;
+	border-left: none;
+   }
+}
+
+.about-mainBox{
+	margin: 0 auto;
+    max-width: 1280px;
+}
+.mainBackGroundArea {
+}
+@media only screen and (max-width: 768px) {
+.mainBackGroundArea  {
+   }
+}
+.mainBackGroundBox {
+    position: relative;
+    display: inline-block;
+	width: clamp(22rem, 17.308rem + 9.78vw, 28rem);
+	overflow: hidden;
+	padding: 1rem 0;
+	transform: translateX(0); /* 下から出現 */
+    transition: transform .5s cubic-bezier(0.08, 0.77, 0.64, 0.64);/* アニメーションの設定 */
+}
+.mainBackGroundBox::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: -5%;
+    transform: translateX(-100%); /* ここが初期状態 */
+    background: #000000d9;
+    transition: transform .5s cubic-bezier(0.57, 0.04, 0.43, 0.98);
+    z-index: 1;
+}
+.mainBackGroundBox.active::before {
+    transform: translateX(110%); /* アクティブ状態で右に移動 */
+}
+.letter-top {
+    overflow: hidden; /* 子要素がはみ出さないように設定 */
+    display: inline-block; /* 子要素が並ぶように */
+	font-size: clamp(3.5rem, 1.936rem + 3.26vw, 5.5rem);
+    font-family: PTSans-Bold, "PT Sans";
+    letter-spacing: -.35rem;
+    color: #333;
+	padding-right: 0.5rem;
+}
+.letter-top span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.letter-top.active span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.letter-top.active span:nth-child(1) {
+    transition-delay: 0s;
+}
+.letter-top.active span:nth-child(2) {
+    transition-delay: 0.06s;
+}
+.letter-top.active span:nth-child(3) {
+    transition-delay: 0.12s;
+}
+.letter-top.active span:nth-child(4) {
+    transition-delay: 0.18s;
+}
+.letter-top.active span:nth-child(5) {
+    transition-delay: 0.24s;
+}
+.letter-top.active span:nth-child(6) {
+    transition-delay: 0.3s;
+}
+.letter-top.active span:nth-child(7) {
+    transition-delay: 0.36s;
+}
+.letter-top.active span:nth-child(8) {
+    transition-delay: 0.42s;
+}
+
+/*profile*/
+.profile-contentsBox {
+    position: relative; 
+    padding: 10rem 0;
+	background-color: #e2e2e2;
+}
+@media only screen and (max-width: 768px) {
+.profile-contentsBox  {
+    padding-top: 6rem;
+    padding-bottom: 6rem;}
+}
+.profile-contentsBox::after {
+    content: '';
+    position: absolute;
+    width: calc(33px + 5.6%);
+    height: 100%;
+    background-color: #000000d9;
+    top: 0;
+    right: 0;
+}
+@media only screen and (max-width: 768px) {
+.profile-contentsBox::after {
+	width: 0;
+   }
+}
+.worksTitle.animate-h2works span:nth-child(6) {
+    transition-delay: 0.4s;
+}
+
+
+.about-ImageColumn {
+    display: flex;
+	/*max-width: 1280px;
+    margin: 0 auto;*/
+	flex-direction: row-reverse;
+}
+@media only screen and (max-width: 768px) {
+.about-ImageColumn {
+    flex-direction: column;
+   }
+}
+.about-ImageBox {
+    width: calc(100% / 3);
+	max-width: 480px;
+    margin: 0 0 0 auto;
+	height: 100%;
+	margin-top: -15%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(360deg, #ffffff 5%, #ffffff 5%, #e2e2e2 5%, #e2e2e2 84%, #ffffff 84%, #ffffff 100%);
+}
+@media only screen and (max-width: 992px) {
+.about-ImageBox {
+	margin-top: -15%;
+	}
+}
+@media only screen and (max-width: 768px) {
+.about-ImageBox {
+    width: 100%;
+	margin-top: 0;
+   }
+}
+img.about-ImageBoxPC {
+	width: 100%;
+}
+@media only screen and (max-width: 768px) {
+img.about-ImageBoxPC {
+	width: 80%;
+   }
+}
+.aboutTitle {
+    font-size: clamp(2.5rem, 0.936rem + 3.26vw, 4.5rem);
+	font-family: PTSans-Bold, "PT Sans";
+	opacity: 0;
+    transform: translateY(100%); /* 初期位置をY軸で100px下に設定 */
+	letter-spacing: -.4vw;
+    transition: transform 0.56s cubic-bezier(0.73, 0, 0.17, 1);/* 0.6秒かけて滑らかに移動 */
+}
+@media only screen and (max-width: 768px) {
+.aboutTitle {
+    font-size: clamp(2.2rem, 1.437rem + 3.26vw, 3rem);
+	letter-spacing: -.25rem;
+   }
+}
+.animate-h2 {
+    opacity: 1;
+    transform: translateY(0); /* 元の位置に移動 */
+}
+.aboutmeTitle span {
+    display: inline-block; /* アニメーションを適用するためにインラインブロックに */
+    opacity: 0;
+    transform: translateY(100%); /* 初期位置をY軸で下に設定 */
+    transition:opacity 0.56s ease-out, transform 0.56s ease-out; /* 移動と透明度のアニメーション */
+}
+
+.aboutTitle.animate-h2 span {
+    opacity: 1;
+    transform: translateY(0); /* 元の位置に移動 */
+}
+
+.aboutTitle.animate-h2 span:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(2) {
+    transition-delay: 0.08s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(3) {
+    transition-delay: 0.16s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(4) {
+    transition-delay: 0.24s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(5) {
+    transition-delay: 0.36s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(6) {
+    transition-delay: 0.4s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(7) {
+    transition-delay: 0.48s;
+}
+
+.aboutTitle.animate-h2 span:nth-child(8) {
+    transition-delay: 0.56s;
+}
+.aboutTxt {
+    padding: clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem) 2vw 0 0;
+}
+@media only screen and (max-width: 768px) {
+.aboutTxt {
+    padding: clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem) 0;
+	}
+}
+.about-suborderTxtBox{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+@media only screen and (max-width: 768px) {
+.about-suborderTxtBox  {
+    width: 100%;
+   }
+}
+.about-suborderTxtSub {
+    display: flex;
+    flex-direction: column;
+}
+.aboutName-suborder{
+	font-size: clamp(1.125rem, 0.727rem + 0.83vw, 1.375rem);
+    margin: clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem) 0;
+    letter-spacing: .15rem;
+}
+@media only screen and (max-width: 768px) {
+.aboutName-suborder {
+	margin: 1.5rem 0 clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem) 0;
+	font-size: clamp(1.1rem, 0.957rem + 0.61vw, 1.25rem);
+	padding-left: 2.5vw;
+   }
+}
+.aboutName-suborder span{
+	font-size: clamp(0.875rem, 0.777rem + 0.2vw, 1rem);
+    padding-left: .8rem;
+	letter-spacing: .05rem;
+}
+.aboutName-suborderBkBox {
+    background-color: #000000d9;
+	margin-left: -1vw;
+}
+p.aboutName-suborderWeb {
+	color: #e2e2e2;
+	padding: clamp(0.3rem, 0.144rem + 0.33vw, 0.5rem) 1vw;
+	font-size: clamp(0.875rem, 0.777rem + 0.2vw, 1rem);
+}
+@media only screen and (max-width: 768px) {
+p.aboutName-suborderWeb {
+	font-size: clamp(0.75rem, 0.559rem + 0.81vw, 0.95rem);
+	margin-left: 2.5vw;
+	}
+}
+.aboutTxt p.about-suborderPlofile{
+	line-height: 2;
+	font-size: clamp(0.875rem, 0.676rem + 0.41vw, 1rem);
+}
+@media only screen and (max-width: 768px) {
+.aboutTxt p.about-suborderPlofile {
+	font-size: clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem);
+   }
+}
+
+/*skills*/
+.career-contentsBox {
+    padding: 10rem 0;
+	position: relative;
+}
+.career-contentsBox::before {
+    content: '';
+    width: calc(100% - (33px + 5.8%));
+    height: 1px;
+    background: #e2e2e2;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.about-skillscontentsArea {
+    padding: 0 calc(33px + 5.6%);
+}
+@media only screen and (max-width: 992px) {
+	.about-skillscontentsArea {
+		padding-left: 5%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.about-skillscontentsArea {
+		padding: 0 5%;
+	}
+}
+		
+.about-skillscontentsArea-width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.about-skills3columnBox {
+    display: flex;
+	margin-bottom: 3vw;
+}
+@media only screen and (max-width: 768px) {
+.about-skills3columnBox {
+	margin-bottom: 7vw;
+	}
+}
+ul.about-skills-SquereBox {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2vw;
+}
+@media only screen and (max-width: 768px) {
+ul.about-skills-SquereBox {
+	flex-direction: column;
+    row-gap: 1rem;
+	}
+}
+li.about-skills-iconBox {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    width: calc(100% / 3);
+	padding: 1vw;
+	row-gap: 1vw;
+	background-color: #f8f8f8;
+}
+@media only screen and (max-width: 768px) {
+li.about-skills-iconBox {
+    width: 100%;
+	padding: 3vw;
+	row-gap: 3vw;
+	}
+}
+@media only screen and (max-width: 576px) {
+li.about-skills-iconBox {
+    }
+}
+.about-skills-iconTitle {
+    display: flex;
+    justify-content: center;
+}
+img.about-skills-iconImg {
+    width: 25%;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    img.about-skills-iconImg {
+        width: 15%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    img.about-skills-iconImg {
+        width: 20%;
+    }
+}
+p.about-skills-icontxt {
+    line-height: 1.9;
+    font-size: clamp(0.875rem, 0.676rem + 0.41vw, 1rem);
+}
+@media only screen and (max-width: 768px) {
+p.about-skills-icontxt {
+    font-size: clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem);
+    }
+}
+.about-skills-AppSquereBox {
+    display: flex;
+	flex-wrap: wrap;
+	row-gap: 1vw;
+	column-gap: 2vw;
+}
+@media only screen and (max-width: 768px) {
+.about-skills-AppSquereBox {
+	row-gap: 3vw;
+	column-gap: 3vw;
+	}
+}
+.about-skills-AppBox {
+    display: flex;
+    flex-direction: column;
+	row-gap: 1vw;
+	width: calc((100% - 4vw) / 3);
+	background-color: #f8f8f8;
+    padding: 1vw;
+}
+@media only screen and (max-width: 768px) {
+.about-skills-AppBox {
+	width: calc((100% - 3vw) / 2);
+	}
+}
+.about-skills-AppTitle {
+    font-size: clamp(0.875rem, 0.676rem + 0.41vw, 1rem);
+}
+@media only screen and (max-width: 768px) {
+.about-skills-AppTitle {
+    font-size: clamp(0.75rem, 0.559rem + 0.81vw, 0.95rem);
+	}
+}
+@media only screen and (max-width: 576px) {
+	.about-skills-AppTitle {
+	letter-spacing: -.05vw;
+	}
+}
+
+ul.about-skills-AppImgBox {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3vw;
+}
+@media only screen and (max-width: 576px) {
+ul.about-skills-AppImgBox {
+    column-gap: 3vw;
+    }
+}
+li.about-skills-AppImglist {
+    max-width: 10%;
+}
+li.about-skills-AppImglist-v {
+    max-width: 20%;
+}
+@media only screen and (max-width: 768px) {
+li.about-skills-AppImglist-v {
+    max-width: 30%;
+	}
+}
+@media only screen and (max-width: 768px) {
+li.about-skills-AppImglist {
+    max-width: 15%;
+	}
+}
+
+/*Biography*/
+.career-contentsArea {
+    padding-left: calc(33px + 5.6%);
+    padding-right: calc(33px + 5.6%);
+}
+@media only screen and (max-width: 992px) {
+    .career-contentsArea {
+        padding-left: 5%;
+    }
+}
+.career-TitleColumn {
+    padding-bottom: 4vh;
+}
+.careerTitle {
+    font-size: clamp(2.5rem, 0.936rem + 3.26vw, 4.5rem);
+    font-family: PTSans-Bold, "PT Sans";
+    opacity: 0;
+    transform: translateY(100%);
+    letter-spacing: -.4vw;
+    transition: transform 0.56s cubic-bezier(0.73, 0, 0.17, 1);
+}
+@media only screen and (max-width: 992px) {
+    .careerTitle {
+       font-size: clamp(2.2rem, 1.437rem + 3.26vw, 3rem);
+       letter-spacing: -.25rem;
+    }
+}
+.animate-h2 {
+    opacity: 1;
+    transform: translateY(0);
+}
+.careerTitle span {
+    display: inline-block; /* アニメーションを適用するためにインラインブロックに */
+    opacity: 0;
+    transform: translateY(100%); /* 初期位置をY軸で下に設定 */
+    transition:opacity 0.56s ease-out, transform 0.56s ease-out; /* 移動と透明度のアニメーション */
+}
+.careerTitle.animate-h2 span {
+    opacity: 1;
+    transform: translateY(0); /* 元の位置に移動 */
+}
+.careerTitle.animate-h2 span:nth-child(1) {
+    transition-delay: 0s;
+}
+.careerTitle.animate-h2 span:nth-child(2) {
+    transition-delay: 0.08s;
+}
+.careerTitle.animate-h2 span:nth-child(3) {
+    transition-delay: 0.16s;
+}
+.careerTitle.animate-h2 span:nth-child(4) {
+    transition-delay: 0.24s;
+}
+.careerTitle.animate-h2 span:nth-child(5) {
+    transition-delay: 0.36s;
+}
+.careerTitle.animate-h2 span:nth-child(6) {
+    transition-delay: 0.40s;
+}
+span.careerSubTitle {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: clamp(12rem, 5.743rem + 13.03vw, 20rem);
+    font-size: clamp(0.85rem, 0.772rem + 0.16vw, 0.95rem);
+}
+span.careerSubTitle::before {
+    content: '';
+    position: absolute;
+    width: clamp(17.5rem, 1.467rem + 33.4vw, 38rem);
+    height: 2px;
+    background-color: #333;
+    top: .5vh;
+    left: 0;
+    margin-left: -21.5vw;
+}
+.about-careercontentsArea {
+    padding: 0 calc(33px + 5.6%);
+}
+@media only screen and (max-width: 992px) {
+.about-careercontentsArea {
+        padding-left: 5%;
+    }
+}
+@media only screen and (max-width: 768px) {
+.about-careercontentsArea {
+    padding: 0 5%;
+	}
+}
+.about-careerscontentsArea-width {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.about-careerColumnBox {
+    padding-bottom: 10rem;
+}
+.about-careerLinecolumnBox {
+    display: flex;
+	position: relative;
+	overflow: hidden;
+	opacity: 0;
+	transform: translateY(100px);
+	transition: all 0.5s ease-out;
+}
+@media only screen and (max-width: 768px) {
+.about-careerLinecolumnBox {
+    flex-direction: column;
+	}
+}
+.about-careerLinecolumnBox.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+.about-careerDate {
+    width: calc(100% / 3);
+	padding-top: 5vw;
+}
+@media only screen and (max-width: 768px) {
+.about-careerDate {
+    padding-left: 5vw;
+    border-left: solid 1px #333;
+	font-size: clamp(0.75rem, 0.631rem + 0.51vw, 0.875rem);
+	}
+}
+.about-careerTextBox {
+    display: flex;
+    border-left: solid 1px #333;
+	position: relative;
+	padding: 5vw 0 0 5vw;
+	width: calc((100% / 2)* 2);
+	flex-direction: column;
+	align-items: flex-end;
+}
+@media only screen and (max-width: 768px) {
+.about-careerTextBox {
+	padding: 2.5vw 0 5vw 5vw;
+	}
+}
+.about-careerTextBox::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #333;
+    position: absolute;
+    left: -6px;
+    top: 5.25vw;
+    border-radius: 100%;
+}
+@media only screen and (max-width: 768px) {
+.about-careerTextBox::before {
+    top: 2.5vw;
+	}
+}
+.about-careerTextBox dl dt {
+    font-size: clamp(1.125rem, 0.727rem + 0.83vw, 1.375rem);
+    margin-bottom: 1vw;
+}
+@media only screen and (max-width: 768px) {
+.about-careerTextBox dl dt {
+    font-size: clamp(1.1rem, 0.957rem + 0.61vw, 1.25rem);
+    margin-bottom: 3vw;
+	}
+}
+.about-careerTextBox dl dd {
+    font-size: clamp(0.875rem, 0.676rem + 0.41vw, 1rem);
+	line-height: 2;
+}
+@media only screen and (max-width: 768px) {
+.about-careerTextBox dl dd {
+    font-size: clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem);
+	}
+}
+.about-careerDetailText {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.about-careerDetailText.open {
+    max-height: 300px; /* 展開時の高さ */
+}
+
+.show-more-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #e2e2e2;
+    border: none;
+	padding: .5vw;
+	letter-spacing: .05rem;
+    font-size: .9rem;
+	width: 10rem;
+}
