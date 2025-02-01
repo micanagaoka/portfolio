@@ -3,248 +3,1060 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0,user-scalable=1">
 <meta name="format-detection" content="telephone=no">
 <title>長岡美香のportfolio</title>
+<!--script async="" src="/js/matomo.js"></script-->
 <script type="application/ld+json"></script>
 <meta name="keywords" content="portfolio">
 <meta name="description" content="portfolio">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/reset.css" type="text/css">
 <link rel="stylesheet" href="/css/portfolio-top.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
 </head>
 <body>
 	<div class="mainTop-contents">
-		<div class="mainTopArea">
+		<div id="loader" class="loading">
+			<div class="title">
+				<span>M</span>
+				<span>I</span>
+				<span>K</span>
+				<span>A</span>
+				<span>&nbsp;</span>
+				<span>N</span>
+				<span>A</span>
+				<span>G</span>
+				<span>A</span>
+				<span>O</span>
+				<span>K</span>
+				<span>A</span>
+			</div>	
+		</div>
+		<div id="loader-overlay"></div>
+		<div id="content" style="display: none;">
+<!--HEADER-->		
+		<div class="mainTopArea" id="top">
 			<div class="header">
-				<div class="headerBox">
-					<div class="headerNav">
-						<a class="navLinks u-line" href="#">
-							<p class="navLinksTxt">Home</p>
-						</a>
-						<a class="navLinks u-line" href="#about">
-							<p class="navLinksTxt">About Me</p>
-						</a>
-						<a class="navLinks u-line" href="#works">
-							<p class="navLinksTxt">Works</p>
-						</a>
-						<a class="navLinks u-line" href="mailto:searchanddestroy7221@gmail.com">
-							<p class="navLinksTxt">Contact</p>
-						</a>		
+				<div class="headermenuBox pcOnly">
+					<div class="headerBox pcOnly">
+						<div class="headerNav">
+							<a class="navLinks u-line" href="/index.html">
+								<p class="navLinksTxt">Home</p>
+							</a>
+							<a class="navLinks u-line" href="/about/">
+								<p class="navLinksTxt">About Me</p>
+							</a>
+							<a class="navLinks u-line" href="/#works">
+								<p class="navLinksTxt">Works</p>
+							</a>
+							<a class="navLinks u-line" href="mailto:searchanddestroy7221@gmail.com">
+								<p class="navLinksTxt">Contact</p>
+							</a>		
+						</div>
+					</div>
+					<div class="headerBox spOnly">
+						<div class="headerLogo">
+							<a class="homeTop" href="">
+								<img src="/images/logo_gy.webp" alt="logoicon">
+							</a>
+						</div>		
 					</div>
 				</div>
-				<!--div class="headerBox">
-					<div class="headerLogo">
-						<a class="homeTop" href="/">
-							<img src="/voice1121/test/images/logo.png" alt="logoicon">
-						</a>
-					</div>		
-					<div class="headerNav">
-						<a class="navLinks u-line" href="#">
-							<p class="navLinksTxt">Home</p>
-						</a>
-						<a class="navLinks u-line" href="#about">
-							<p class="navLinksTxt">About Me</p>
-						</a>
-						<a class="navLinks u-line" href="#works">
-							<p class="navLinksTxt">Works</p>
-						</a>
-						<a class="navLinks u-line" href="mailto:searchanddestroy7221@gmail.com">
-							<p class="navLinksTxt">Contact</p>
-						</a>		
+				<div class="hummenu-Box">
+					<div class="overlay" id="overlay"></div>
+					<div class="menu-icon" id="menuIcon">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
 					</div>
-				</div-->
-				
-				<div class="overlay" id="overlay"></div>
-				<div class="menu-icon" id="menuIcon">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
+					<nav class="nav-menu" id="navMenu">
+						<ul>
+							<li><a href="/">Home</a></li>
+							<li><a href="/about/">About Me</a></li>
+							<li><a href="/#works">Works</a></li>
+							<li><a href="mailto:searchanddestroy7221@gmail.com">Contact</a></li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="nav-menu" id="navMenu">
-					<ul>
-						<li><a href="#home">Home</a></li>
-						<li><a href="/about">About me</a></li>
-						<li><a href="/works">works</a></li>
-						<li><a href="mailto:searchanddestroy7221@gmail.com">Contact</a></li>
-					</ul>
-				</nav>
+			</div>
+			<div class="mainTopScroll">
+				<a class="scrollTab u-line" href="#about">
+					<div class="scroll">
+					<span class="line"></span>
+					</div>
+				</a>
 			</div>
 			<div class="mainTopBlackBlock">
 				<div class="mainTopBlackTxt"></div>
-				<div class="mainTopScroll">
-					<a class="scrollTab u-line" href="#about"><div class="scroll">
-						<span class="line"></span>
-					</div></a>
-				</div>
 			</div>
-<!--HEADER-->		
+<!--TOP-->		
 			<div class="mainVisualArea">
-				<div class="mainTitleBox">
-					<h1><span class="headername">Portfolio</span><br>
-						&ensp;MIKA NAGAOKA<br>
-					</h1>
-					<div class="headernameSub">Profile-website</div>
-				</div>
-				<div class="mainSubTitleBox">
-					<div class="mainSubTitleName">
-						<ul>
-							<li class="mainJobTitile">Designer</li>
-							<li class="mainJobTitile">Cording</li>
-							<li class="mainJobTitile">Direction</li>
-							<li class="mainJobTitile">Illust</li>
-						</ul>
+				<div class="mainVisualBox">
+					<div class="mainTitleBox">
+						 <h1 class="portfolio">
+							<span>M</span>
+							<span>I</span>
+							<span>K</span>
+							<span>A</span>
+							<span>&nbsp;</span>
+							<span>N</span>
+							<span>A</span>
+							<span>G</span>
+							<span>A</span>
+							<span>O</span>
+							<span>K</span>
+							<span>A</span>
+						</h1>
+						<div class="headername">PORTFOLIO</div>
+						<div class="column-below-h1">
+							<span class="english-text">Through my experience creating business manuals, I realized how interesting information design is. Since I had an longing for creativity, I started studying web design.</span>
+							<span class="japanese-text">業務マニュアル作成の経験を通じて、情報デザインの面白さに気づき、クリエイティブな仕事に憧れてWebデザインを勉強し始めました。</span>
+						</div>
+						<div class="column-below-h1sub">
+							Desighn | Coding | Direction | Illust | Photo | Writing
+						</div>
 					</div>
-					<div class="mainSubTitleNumberBox">
-						<span class="mainSubTitleNumber">2024</span>
+					<div class="mainSubTitleBox">
+						<div class="mainSubTitleLinkBox">
+							 <a class="mainSubTitleLink open-works-list" onclick="toggleWorksList()">Works List</a>
+						</div>
+						 <div class="custom-overlay" id="customOverlay">
+							 <div class="overlay-box">
+								 <div class="customOverlayTitleBox">
+									 <div class="customOverlayTitle">Works List
+									</div> 
+									<button class="close-overlay-btn">close</button>
+								</div>
+								 <ul class="overlay-boxcolumn">
+									<li>
+										<div class="overlay-img-container">
+											<a href=""><img src="/images/work_list_potenza.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>POTENZA On Web</span><br>
+											POTENZA CIRCUIT MEETING!<br>
+											POTENZA CIRCUIT ATTACK
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_superGT.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>ブリヂストンタイヤオンラインストア</span><br>
+											SUPER GT 決勝レースご招待キャンペーン
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_encore.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>ENcore不動産</span><br>
+											コーポレートサイト
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_ec.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>コクピットタイヤ館オンラインストア</span><br>
+											購入・作業予約受付
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_voice.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>コクピットタイヤ館オンラインストア</span><br>
+											お客様の声
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_mobox.webp" alt="mainimages"></a>
+										</div>	
+										<p><span class="overlay-title">mobox</span><br>
+											トップ/製品/取扱店舗/タイヤプラン/マイページ
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_cptk.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>コクピットタイヤ館オンラインストア</span><br>
+											ポータルサイトトップ
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_parkhomes.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>PARKHOMES FAN</span><br>
+											コーポレートサイト
+										</p>
+									</li> 
+									<li>
+										<div class="overlay-img-container">
+											<a href="">
+											<img src="/images/work_list_voice-cam.webp" alt="mainimages"></a>
+										</div>	
+										<p><span>コクピットタイヤ館オンラインストア</span><br>
+											"お客様の声"募集キャンペーン
+										</p>
+									</li> 
+								 </ul>
+							 </div>
+						</div>
+						<div class="mainSubTitleSPBox">
+							Resume 2024
+						</div>	
+						<!--div class="mainSubTitleName">
+							<ul>
+								<li class="mainJobTitile01"></li>
+								<li class="mainJobTitile02"></li>
+								<li class="mainJobTitile03"></li>
+								<li class="mainJobTitile04"></li>
+								<li class="mainJobTitile05"></li>
+							</ul>
+						</div-->
 					</div>
 				</div>
-				<div class="mainBackGroundArea">
-					<div class="mainBackGroundBox" id="skill1" style="width: 0%;"></div>
-				</div>
+
 			</div>
 		</div>	
 <!--ABOUT ME-->		
 		<div class="aboutme-contentsBox" id="about">
 			<div class="aboutme-contentsArea">
-				<div class="aboutme-TitleBox">
+				<div class="aboutme-TitleColumn">
 					<h2 class="aboutmeTitle">
-						About Me
-					</h2>
-					<a class="homeTop" href="/">
-						<img src="/images/about.png" alt="about">
-					</a>
+							<span>A</span>
+							<span>b</span>
+							<span>o</span>
+							<span>u</span>
+							<span>t</span>
+							<span>&nbsp;</span>
+							<span>M</span>
+							<span>e</span>
+					</h2>   
+					<span class="aboutmeSubTitle">私について</span>
 				</div>
-				<div class="aboutmeTxtBox">
-					<div class="aboutmeTxtSub">
-						<p class="aboutName">長岡 美香<span>Nagaoka Mika</span></p>
-						<div class="aboutmeTxt">
-							<p class="aboutPlofile">HPやLPの制作をはじめとしたWEB全般を担当しておりました。<br>
-							デザインにおいては、「わかりやすく」「使いやすく」、そして「楽しい！」をモットーに、シンプルで視認性の高いデザイン、ユーザーが直感的に操作できる快適で魅力的なウェブサイトを提供することを常に目指しています。
-							</p>
+				<div class="aboutme-ImageColumn">
+					<div class="aboutme-ImageBox">
+						<div class="aboutme-ImageBoxBG">
+							<img class="aboutme-ImageBoxPC" src="/images/about.webp" alt="about">
+						</div>
+					</div>
+					<div class="aboutName">
+						長岡 美香<span>Nagaoka Mika</span>
+					</div>
+					<div class="aboutmeTxtBox">
+						<div class="aboutmeTxtSub">
+							<div class="aboutNameBkBox">
+								<p class="aboutNameWeb">Web Designer</p>
+							</div>
+							<div class="aboutmeTxt">
+								<p class="aboutPlofile">HPやLPの制作をはじめとしたWEB全般を担当しておりました。<br>
+								デザインにおいては、「わかりやすく」「使いやすく」、そして「楽しい！」をモットーに、シンプルで視認性の高いデザイン、ユーザーが直感的に操作できる快適で魅力的なウェブサイトを提供することを常に目指しています。
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="aboutme-leadMoreArea">
 				<div class="learnMore inview2 inview3 animStart lineStart delay">
-					<a class="fadeInUp2 active" href="">
-						Lead More</a>
+					<a class="fadeInUp2 active" href="/about/">
+						View More</a>
 				</div>
 			</div>
 		</div>
 <!--WORKS-->		
-		<div class="works-contentsBox">
+		<div class="works-contentsBox" id="works">
 			<div class="works-contentsArea">
-				<div class="works-TitleBox">
-					<h2 class="worksTitle">
-						Works
-					</h2>
-				</div>
-				<div class="aboutmeTxtBox">
-					<div class="aboutmeTxtSub">
-						<!--p>長岡 美香<span>Nagaoka Mika</span></p-->
-						<div class="aboutmeTxt">
-							<p>制作会社にてHP・LP制作など、WEB全般のお仕事をしておりました。<br>
-							</p>
-						</div>
+				<div class="works-TitleColumn">
+					<div class="worksTitleH2">
+						<h2 class="worksTitle">
+							<span>W</span>
+							<span>o</span>
+							<span>r</span>
+							<span>k</span>
+							<span>s</span>
+						</h2>   
+						<span class="worksSubTitle">制作物</span>
 					</div>
 				</div>
-			</div>
-			<div class="worksListArea">
-				<div class="worksListBox">
-					<div class="worksList-Column">
-						<div class="imageBox">
-							<img src="/images/work_thumb_potenza.jpg" alt="mainimages">
-						</div>
-						<div class="worksTitleBox">
-							<div class="worksTextBox">
-								<p></p>
+				<div class="worksListArea">
+					<div class="worksListBox">
+						<a class="worksFadeBox" href="/works/potenza/">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2022
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox">
+													POTENZA On Web
+												</div>
+											</div>
+											<div class="worksTitleBox">
+												POTENZA CIRCUIT MEETING!<br>
+												POTENZA CIRCUIT ATTACK
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+													<li class="Listpipe">Photo</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_potenza.webp" alt="mainimages">
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="worksList-Column">
-						<div class="">
-							<img src="/images/work_thumb_superGT.jpg" alt="mainimages">
-						</div>
-					</div>
-					<div class="worksList-Column">
-						<div class="">
-							<img src="/images/work_thumb_encore.jpg" alt="mainimages">
-						</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="/works/superGT/">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													ブリヂストン タイヤオンラインストア
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												ブリヂストン タイヤオンラインストア オープン記念<br>
+												SUPER GT 決勝レースご招待キャンペーン
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_superGT.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													ENcoreアンコール不動産
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												コーポレートサイト
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>株式会社 ENcore様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+													<li class="Listpipe">Direction</li>
+													<li class="Listpipe">Writing</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_encore.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													コクピット・タイヤ館オンラインストア
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												購入・作業予約受付ページ
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+													<li class="Listpipe">Illust</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_ec.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													コクピット・タイヤ館オンラインストア
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												お客様の声ページ
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+													<li class="Listpipe">Illust</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_voice.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													mobox - モボックス
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												トップ/製品/取扱い店舗/タイヤプラン/マイページ
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_mobox.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													コクピット・タイヤ館オンラインストア
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												ポータルサイトトップページ
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_cptk.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>	
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													Website
+												</div>
+												<div class="worksCliansitetBox jkana">
+													PARKHOMES FAN - パークホームズファン
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												コーポレートサイト
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>有限会社 成瀬舗設様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+													<li class="Listpipe">Direction</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_parkhomes.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
+						<a class="worksFadeBox" href="">
+							<div class="worksList-Column">
+								<div class="worksList-ColumnWidth">
+									<div class="worksKindTopBox">
+										<div class="worksKindBox">
+											2023
+										</div>
+										<!--div class="worksKindDateBox">
+											2022
+										</div-->
+									</div>
+									<div class="worksDetailBox">
+										<div class="worksProjectBox">
+											<div class="worksProjectClianBox">
+												<div class="worksCliantBox">
+													CampaignLP
+												</div>
+												<div class="worksCliansitetBox jkana">
+													コクピット・タイヤ館オンラインストア
+												</div>
+											</div>
+											<div class="worksTitleBox jkana">
+												タイヤ購入エピソード"お客様の声"募集キャンペーン
+											</div>
+											<div class="worksLinkBox">
+												<ul class="worksLinkLine">
+													<li class=""><p>cliant<span>:</span>Bridgestone様</p></li>
+												</ul>
+												<ul class="worksLinkLine">
+													<li class=""><p>project scope<span>:</span>Desighn</p></li>
+													<li class="Listpipe">Coding</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="worksList-imageBox">
+										<img src="/images/work_thumb_voice-cam.webp" alt="mainimages">
+									</div>
+								</div>
+							</div>
+							<div class="click-more-detail">
+								<span>Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;Click here more detail.&ensp;</span>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 			<div class="aboutme-leadMoreArea">
 				<div class="learnMore inview2 inview3 animStart lineStart delay">
 					<a class="fadeInUp2 active" href="">
-						More Works</a>
+						Other Works</a>
 				</div>
 			</div>
 		</div>
+		
+		
+		<!--div class="screenshot-container">
+		<img src="/images/superGT.webp" alt="Portfolio Screenshot">
+		</div-->
+	
 <!--footer-->		
 		<div class="footer">
 			<div class="footerBox">
-				<div class="footerLogo">
-					<a class="homeTop" href="/">
-						<img src="/voice1121/test/images/logo.png" alt="logoicon">
-					</a>
-				</div>		
-				<div class="footerNav">
-					<a class="navLinks" href="#about">
-						<p class="navLinksTxt">About Me</p>
-					</a>
-					<a class="navLinks" href="#works">
-						<p class="navLinksTxt">Works</p>
-					</a>
-					<a class="navLinks" href="#thisSite">
-						<p class="navLinksTxt">This Site</p>
-					</a>		
-					<a class="navLinks" href="mailto:searchanddestroy7221@gmail.com">
-						<p class="navLinksTxt">Contact</p>
-					</a>		
+				<div class="footerContentBox">
+					<div class="footerNav">
+						<ul>
+							<li><a class="u-lineF" href="#top">Home</a></li>
+							<li><a class="u-lineF" href="/about/">About me</a></li>
+							<li><a class="u-lineF" href="/#works">Works</a></li>
+							<!--li><a class="u-lineF pcOnly" href="mailto:searchanddestroy7221@gmail.com">Contact</a></li-->
+						</ul>
+					</div>
+					<div class="footecolumn">
+						<div class="footecolumn-Mailform">
+							Mail Form
+						</div>
+						<a class="footecolumn-ContactLink" href="mailto:searchanddestroy7221@gmail.com">
+							<div class="footecolumn-Contact">
+								Contact
+							</div>
+						</a>	
+						<div class="footecolumn-MesseBox">
+							<div class="footecolumn-Message">
+							気になることやご質問などお気軽にご連絡ください。
+							</div>
+							<div class="footecolumn-Copyright">
+							©Mika Nagaoka-2024
+							</div>
+						</div>
+					</div>	
 				</div>
+				<div class="footerLogo">
+					<a class="homeTop" href="">
+						<img src="/images/logo.webp" alt="logoicon">
+					</a>
+				</div>
+			</div>	
+			<div class="footerScroll">
+				<a class="scrollTab u-line" href="#top">
+					<div class="scrollF">
+						<span class="line"></span>
+					</div>
+				</a>
 			</div>
 		</div>
+		</div>	
 	</div>	
+
 <script>
-	window.onload = function() {
-    setTimeout(() => {
-        const mainBackGroundBox = document.getElementById('skill1');
-        mainBackGroundBox.style.width = '88%';  // 幅
-    }, 1000); // 1秒後に開始
-}
-</script>
-<script>
-	document.querySelector('.fadeInUp2.active').addEventListener('mouseover', function() {
-  document.querySelector('.aboutme-contentsBox').classList.add('hovered');
+document.querySelector('.fadeInUp2.active').addEventListener('mouseover', function() {
+  document.querySelector('.aboutme-leadMoreArea::after').style.width = '11.5vw';
 });
 
 document.querySelector('.fadeInUp2.active').addEventListener('mouseout', function() {
-  document.querySelector('.aboutme-contentsBox').classList.remove('hovered');
+  document.querySelector('.aboutme-leadMoreArea::after').style.width = '10vw';
 });
+
+</script>
+<script>
+// ハンバーガーメニューとオーバーレイ要素を取得
+const menuIcon = document.querySelector('.menu-icon');
+const navMenu = document.querySelector('.nav-menu');
+const overlay = document.querySelector('.overlay');
+
+// ハンバーガーメニューのクリックでメニューを表示/非表示
+menuIcon.addEventListener('click', function() {
+    menuIcon.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    overlay.classList.toggle('active');
+});
+
+// メニュー外のオーバーレイをクリックした時にメニューを閉じる
+overlay.addEventListener('click', function() {
+    menuIcon.classList.remove('active');
+    navMenu.classList.remove('active');
+    overlay.classList.remove('active');
+});
+
+// メニューを閉じる時に2番目のバーのスタイルをリセット
+function closeMenu() {
+    menuIcon.classList.remove('active'); // ハンバーガーアイコンのスタイルをリセット
+    navMenu.classList.remove('active'); // メニューを閉じる
+    overlay.classList.remove('active'); // オーバーレイを非表示
+}
+
+// メニューを閉じる際にリセットされるよう、オーバーレイやメニュー外クリックでcloseMenu()を呼ぶ
+overlay.addEventListener('click', closeMenu);
+</script>
+<script>
+window.onload = function() {
+    const CLASSNAME_VISIBLE = "-visible";
+    const CLASSNAME_FADE = "-fade";
+    const TIMEOUT_VISIBLE = 1500; // 文字が出現する時間
+    const TIMEOUT_FADE = 1000; // フェードアウトの時間
+    const $target = document.querySelector(".title");
+    const h1 = document.querySelector('h1'); // H1要素を取得
+    const overlay = document.getElementById('loader-overlay');
+
+    // セッションストレージでローディングアニメーションを確認
+    if (!sessionStorage.getItem('loadingDisplayed')) {
+        // 初回表示時
+        setTimeout(() => {
+            $target.classList.add(CLASSNAME_VISIBLE);
+
+            setTimeout(() => {
+                $target.classList.add(CLASSNAME_FADE);
+
+                setTimeout(() => {
+                    document.getElementById('loader').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+
+                    // 幕のアニメーションを開始
+                    overlay.style.animation = '.75s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%) 0s 1 normal forwards running slideUp';
+
+                    // 幕のアニメーションが終了する1秒後にH1のアニメーションを開始
+                    setTimeout(() => {
+                        h1.classList.add('active'); // H1のアニメーション開始
+                    }, 1000); // 幕が完全に上がる前の0.5秒前に実行
+
+                    // 幕が完全に上がりきったら非表示に
+                    setTimeout(() => {
+                        overlay.style.display = 'none';
+                    }, 550);
+
+                    setTimeout(() => {
+                        // PORTFOLIOの文字を1つずつ表示
+                        const spans = document.querySelectorAll('.portfolio span');
+                        spans.forEach((span, index) => {
+                            setTimeout(() => {
+                                span.classList.add('-visible');
+                            }, index * 50); 
+                        });
+
+                        setTimeout(() => {
+                            const mainSubTitleLink = document.querySelector('.mainSubTitleLink');
+                            const headername = document.querySelector('.headername');
+                            const columnBelowH1 = document.querySelector('.column-below-h1');
+                            const columnBelowH1sub = document.querySelector('.column-below-h1sub');
+                            mainSubTitleLink.classList.add('-slide-up-visible');
+                            headername.classList.add('-slide-up-visible');
+                            columnBelowH1.classList.add('-slide-up-visible');
+                            columnBelowH1sub.classList.add('-slide-up-visible');
+                        }, spans.length * 100 + 300);
+
+                    }, 1200); 
+                }, TIMEOUT_FADE); 
+            }, TIMEOUT_VISIBLE); 
+        }, TIMEOUT_VISIBLE);
+
+        // ローディング表示済みフラグをセット
+        sessionStorage.setItem('loadingDisplayed', 'true');
+    } else {
+        // 2回目以降はローディングアニメーションをスキップ
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        overlay.style.display = 'none'; 
+
+        // H1のアニメーションをスムーズに開始
+        setTimeout(() => {
+            h1.classList.add('active'); // アニメーション開始
+        }, 1000); 
+
+        setTimeout(() => {
+            const spans = document.querySelectorAll('.portfolio span');
+            spans.forEach((span, index) => {
+                setTimeout(() => {
+                    span.classList.add('-visible'); 
+                }, index * 50); 
+            });
+
+            setTimeout(() => {
+                const mainSubTitleLink = document.querySelector('.mainSubTitleLink');
+                const headername = document.querySelector('.headername');
+                const columnBelowH1 = document.querySelector('.column-below-h1');
+                const columnBelowH1sub = document.querySelector('.column-below-h1sub');
+                mainSubTitleLink.classList.add('-slide-up-visible');
+                headername.classList.add('-slide-up-visible');
+                columnBelowH1.classList.add('-slide-up-visible');
+                columnBelowH1sub.classList.add('-slide-up-visible');
+            }, spans.length * 100 + 300);
+        }, 1000);
+    }
+};
+
 </script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const menuIcon = document.querySelector('.menu-icon');
-    const navMenu = document.querySelector('.nav-menu');
-    const overlay = document.querySelector('.overlay');
+    const overlay = document.getElementById('customOverlay');
+    const mainSubTitleLink = document.querySelector('.mainSubTitleLink');
+	const closeButton = document.querySelector('.close-overlay-btn');
 
-    menuIcon.addEventListener('click', function() {
-        menuIcon.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        overlay.classList.toggle('active');
+    function toggleWorksList() {
+        if (overlay.classList.contains('opened')) {
+            // 閉じるアニメーションを開始
+            overlay.classList.remove('opened');
+			overlay.classList.add('closing'); 
+            setTimeout(() => {
+                overlay.classList.remove('closing');// 完全に非表示にする
+            }, 500); // アニメーションの時間に合わせて
+        } else {
+            overlay.style.display = 'flex'; // 表示
+            setTimeout(() => {
+                overlay.classList.add('opened');
+            }, 10); // アニメーションが適用されるための少しの遅延
+        }
+    }
+	closeButton.addEventListener('click', toggleWorksList); // クローズボタンクリックで閉じる
+    mainSubTitleLink.addEventListener('click', toggleWorksList);
+	
+    document.addEventListener('click', function(event) {
+        if (overlay.classList.contains('opened') && !overlay.contains(event.target) && !mainSubTitleLink.contains(event.target)) {
+            toggleWorksList(); // 閉じる関数を呼び出す
+        }
     });
 
-    overlay.addEventListener('click', function() {
-        menuIcon.classList.remove('active');
-        navMenu.classList.remove('active');
-        overlay.classList.remove('active');
-    });
+    mainSubTitleLink.addEventListener('click', toggleWorksList);
 });
 
+</script>
+<script>	
+	let toggle = true;
+setInterval(() => {
+  const englishText = document.querySelector('.english-text');
+  const japaneseText = document.querySelector('.japanese-text');
+  
+  if (toggle) {
+    englishText.style.opacity = 0;
+    englishText.style.transform = 'rotateX(180deg)';
+    japaneseText.style.opacity = 1;
+    japaneseText.style.transform = 'rotateX(0deg)';
+  } else {
+    englishText.style.opacity = 1;
+    englishText.style.transform = 'rotateX(0deg)';
+    japaneseText.style.opacity = 0;
+    japaneseText.style.transform = 'rotateX(180deg)';
+  }
+
+  toggle = !toggle;
+}, 7000); // 5秒ごとに切り替え
+</script>	
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const aboutmeTitleElements = document.querySelectorAll('.aboutmeTitle');
+    const worksTitleElements = document.querySelectorAll('.worksTitle');
+    const worksFadeBoxes = document.querySelectorAll('.worksFadeBox');
+
+    // スマホ幅の場合の設定
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    const observerOptions = {
+        root: null,
+        rootMargin: isMobile ? '0px 0px -50px 0px' : '0px 0px -100px 0px', // スマホ幅かどうかでrootMarginを分ける
+        threshold: 0,
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-h2');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const worksObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-h2works');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    aboutmeTitleElements.forEach(aboutmeTitle => {
+        observer.observe(aboutmeTitle);
+    });
+
+    worksTitleElements.forEach(worksTitle => {
+        worksObserver.observe(worksTitle);
+    });
+
+    // 複数のworksFadeBox要素を監視
+    const worksFadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fadeIn');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    worksFadeBoxes.forEach(worksFadeBox => {
+        worksFadeObserver.observe(worksFadeBox);
+    });
+});
+</script>
+<script>
+function handleScrollEffect() {
+    if (window.innerWidth > 576) return;  // スマホ幅(768px以下)のみ実行
+
+    const fadeBoxes = document.querySelectorAll('.worksFadeBox');
+    const viewportHeight = window.innerHeight;
+    let activeElement = null;
+
+    fadeBoxes.forEach((fadeBox) => {
+        const rect = fadeBox.getBoundingClientRect();
+
+        // 表示位置に基づき、1つの要素にのみ "hovered" クラスを付与
+        if (rect.top < viewportHeight * 0.6 && rect.bottom > viewportHeight * 0.6) {
+            if (activeElement && activeElement !== fadeBox) {
+                activeElement.classList.remove('hovered');  // 前の要素から "hovered" 解除
+            }
+            fadeBox.classList.add('hovered');
+            activeElement = fadeBox;
+        } else {
+            fadeBox.classList.remove('hovered');
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScrollEffect);
+window.addEventListener('resize', handleScrollEffect);  // ウィンドウリサイズ時もチェック
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const adjustScroll = (id) => {
+        const target = document.getElementById(id);
+        const yOffset = 10; // 10px下に移動したい場合は負の値
+        const yPosition = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: yPosition, behavior: 'smooth' });
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            adjustScroll(targetId);
+        });
+    });
+});
 </script>
 
 </body>
