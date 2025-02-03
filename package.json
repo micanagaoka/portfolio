@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sass": "sass src/style.scss css/style.css"
+    "sass": "sass src/portfolio-top.scss css/portfolio-top.css"
   },
   "dependencies": {
     "@vercel/edge": "^1.1.2",
