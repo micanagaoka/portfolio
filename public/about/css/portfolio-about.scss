@@ -76,8 +76,8 @@
 	width: unquote('clamp(22rem, 17.308rem + 9.78vw, 28rem)');
 	overflow: hidden;
 	padding: 1rem 0;
-	transform: translateX(0); /* 下から出現 */
-    transition: transform .5s cubic-bezier(0.08, 0.77, 0.64, 0.64);/* アニメーションの設定 */
+	transform: translateX(0);
+    transition: transform .5s cubic-bezier(0.08, 0.77, 0.64, 0.64);
 }
 .mainBackGroundBox::before {
     content: "";
@@ -86,17 +86,17 @@
     width: 100%;
     position: absolute;
     left: -5%;
-    transform: translateX(-100%); /* ここが初期状態 */
+    transform: translateX(-100%); /* 初期状態 */
     background: #000000d9;
     transition: transform .5s cubic-bezier(0.57, 0.04, 0.43, 0.98);
     z-index: 1;
 }
 .mainBackGroundBox.active::before {
-    transform: translateX(110%); /* アクティブ状態で右に移動 */
+    transform: translateX(110%); /* アクティブで右に移動 */
 }
 .letter-top {
-    overflow: hidden; /* 子要素がはみ出さないように設定 */
-    display: inline-block; /* 子要素が並ぶように */
+    overflow: hidden; 
+    display: inline-block; 
 	font-size: unquote('clamp(3.5rem, 1.936rem + 3.26vw, 5.5rem)');
     font-family: PTSans-Bold, "PT Sans";
     letter-spacing: -.35rem;
@@ -166,12 +166,8 @@
 .worksTitle.animate-h2works span:nth-child(6) {
     transition-delay: 0.4s;
 }
-
-
 .about-ImageColumn {
     display: flex;
-	/*max-width: 1280px;
-    margin: 0 auto;*/
 	flex-direction: row-reverse;
 }
 @media only screen and (max-width: 768px) {
@@ -213,9 +209,9 @@ img.about-ImageBoxPC {
     font-size: unquote('clamp(2.5rem, 0.936rem + 3.26vw, 4.5rem)');
 	font-family: PTSans-Bold, "PT Sans";
 	opacity: 0;
-    transform: translateY(100%); /* 初期位置をY軸で100px下に設定 */
+    transform: translateY(100%); /* 初期位置をY軸で下 */
 	letter-spacing: -.4vw;
-    transition: transform 0.56s cubic-bezier(0.73, 0, 0.17, 1);/* 0.6秒かけて滑らかに移動 */
+    transition: transform 0.56s cubic-bezier(0.73, 0, 0.17, 1);
 }
 @media only screen and (max-width: 768px) {
 .aboutTitle {
@@ -225,48 +221,39 @@ img.about-ImageBoxPC {
 }
 .animate-h2 {
     opacity: 1;
-    transform: translateY(0); /* 元の位置に移動 */
+    transform: translateY(0); 
 }
 .aboutmeTitle span {
-    display: inline-block; /* アニメーションを適用するためにインラインブロックに */
+    display: inline-block; 
     opacity: 0;
-    transform: translateY(100%); /* 初期位置をY軸で下に設定 */
-    transition:opacity 0.56s ease-out, transform 0.56s ease-out; /* 移動と透明度のアニメーション */
+    transform: translateY(100%); /* 初期位置をY軸で下 */
+    transition:opacity 0.56s ease-out, transform 0.56s ease-out;
 }
-
 .aboutTitle.animate-h2 span {
     opacity: 1;
-    transform: translateY(0); /* 元の位置に移動 */
+    transform: translateY(0);
 }
-
 .aboutTitle.animate-h2 span:nth-child(1) {
     transition-delay: 0s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(2) {
     transition-delay: 0.08s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(3) {
     transition-delay: 0.16s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(4) {
     transition-delay: 0.24s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(5) {
     transition-delay: 0.36s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(6) {
     transition-delay: 0.4s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(7) {
     transition-delay: 0.48s;
 }
-
 .aboutTitle.animate-h2 span:nth-child(8) {
     transition-delay: 0.56s;
 }
@@ -362,7 +349,6 @@ p.aboutName-suborderWeb {
 		padding: 0 5%;
 	}
 }
-		
 .about-skillscontentsArea-width {
     max-width: 1280px;
     margin: 0 auto;
@@ -532,14 +518,14 @@ li.about-skills-AppImglist {
     transform: translateY(0);
 }
 .careerTitle span {
-    display: inline-block; /* アニメーションを適用するためにインラインブロックに */
+    display: inline-block; 
     opacity: 0;
-    transform: translateY(100%); /* 初期位置をY軸で下に設定 */
-    transition:opacity 0.56s ease-out, transform 0.56s ease-out; /* 移動と透明度のアニメーション */
+    transform: translateY(100%); /* 初期位置をY軸で下*/
+    transition:opacity 0.56s ease-out, transform 0.56s ease-out; 
 }
 .careerTitle.animate-h2 span {
     opacity: 1;
-    transform: translateY(0); /* 元の位置に移動 */
+    transform: translateY(0);
 }
 .careerTitle.animate-h2 span:nth-child(1) {
     transition-delay: 0s;
@@ -681,7 +667,6 @@ span.careerSubTitle::before {
 .about-careerDetailText.open {
     max-height: 300px; /* 展開時の高さ */
 }
-
 .show-more-btn {
     margin-top: 10px;
     cursor: pointer;
