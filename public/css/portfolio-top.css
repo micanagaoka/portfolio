@@ -568,21 +568,15 @@ span.mainSubTitleNumber {
   .aboutme-contentsBox {
     padding-top: 6rem;
     padding-bottom: 6rem; } }
-.aboutme-contentsArea {
-  padding-left: calc(33px + 5.6%);
-  padding-right: calc(33px + 5.6%); }
-
 @media only screen and (max-width: 992px) {
   .aboutme-contentsArea {
     padding-left: 5%; } }
 @media only screen and (max-width: 768px) {
   .aboutme-contentsArea {
-    margin: 0 0 1.5rem 5%;
     padding-left: 0;
     padding-right: calc(25px + 5%); } }
 @media only screen and (max-width: 576px) {
   .aboutme-contentsArea {
-    margin: 0 5% 1.5rem 5%;
     padding-right: 0; } }
 .aboutme-TitleBox {
   width: 35%; }
@@ -591,7 +585,9 @@ span.mainSubTitleNumber {
   .aboutme-TitleBox {
     width: 100%; } }
 .aboutme-TitleColumn {
-  padding-bottom: 4vh; }
+  padding-bottom: 4vh;
+  padding-left: calc(33px + 5.6%);
+  padding-right: calc(33px + 5.6%); }
 
 span.aboutmeSubTitle {
   display: flex;
@@ -622,12 +618,16 @@ span.aboutmeSubTitle::before {
   flex-direction: row;
   max-width: 1280px;
   margin: 0 auto;
-  grid-template-columns: 30% 70%; }
+  grid-template-columns: 30% 70%;
+  padding-left: calc(33px + 5.6%);
+  padding-right: calc(33px + 5.6%); }
 
 @media only screen and (max-width: 768px) {
   .aboutme-ImageColumn {
     grid-template-columns: 50% 50%;
-    background: linear-gradient(360deg, #ffffff 5%, #ffffff 5%, #f2f2f2 5%, #f2f2f2 60%, #ffffff 60%, #ffffff 100%); } }
+    background: linear-gradient(360deg, #ffffff 5%, #ffffff 5%, #f2f2f2 5%, #f2f2f2 60%, #ffffff 60%, #ffffff 100%);
+    padding-left: 5%;
+    padding-right: 0; } }
 .aboutme-ImageBox {
   display: grid;
   grid-area: 1 / 1 / 3 / 2;
@@ -636,13 +636,11 @@ span.aboutmeSubTitle::before {
 
 @media only screen and (max-width: 768px) {
   .aboutme-ImageBox {
-    grid-area: 1 / 1 / 2 / 2; } }
+    grid-area: 1 / 1 / 2 / 2;
+    background: none; } }
 .aboutme-ImageBoxBG {
   display: flex;
   justify-content: flex-end; }
-
-img.aboutme-ImageBoxPC {
-  width: 85%; }
 
 .aboutmeTitle {
   font-size: clamp(2.5rem, 0.936rem + 3.26vw, 4.5rem);
@@ -702,7 +700,7 @@ img.aboutme-ImageBoxPC {
 
 @media only screen and (max-width: 768px) {
   .aboutmeTxt {
-    padding: clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem) 0; } }
+    padding: clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem) 2vw; } }
 @media only screen and (max-width: 768px) {
   .aboutmeTxtBox {
     grid-area: 2 / 1 / 3 / 3; } }

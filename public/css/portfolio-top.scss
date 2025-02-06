@@ -644,8 +644,6 @@
         padding-bottom: 6rem;}
     }
     .aboutme-contentsArea {
-        padding-left: calc(33px + 5.6%);
-        padding-right: calc(33px + 5.6%);
     }
     @media only screen and (max-width: 992px) {
         .aboutme-contentsArea{
@@ -654,13 +652,11 @@
     }
     @media only screen and (max-width: 768px) {
     .aboutme-contentsArea  {
-        margin: 0 0 1.5rem 5%;
         padding-left: 0;
         padding-right: calc(25px + 5%);}
     }
     @media only screen and (max-width: 576px) {
     .aboutme-contentsArea  {
-        margin: 0 5% 1.5rem 5%;
         padding-right: 0;	}
     }
     .aboutme-TitleBox {
@@ -672,6 +668,8 @@
     }
     .aboutme-TitleColumn {
         padding-bottom: 4vh;
+		padding-left: calc(33px + 5.6%);
+		padding-right: calc(33px + 5.6%);
     }
     span.aboutmeSubTitle {
         display: flex;
@@ -707,11 +705,15 @@
         max-width: 1280px;
         margin: 0 auto;
         grid-template-columns: 30% 70%;
+		padding-left: calc(33px + 5.6%);
+		padding-right: calc(33px + 5.6%);
     }
     @media only screen and (max-width: 768px) {
     .aboutme-ImageColumn {
         grid-template-columns: 50% 50%;
 		background: linear-gradient(360deg, #ffffff 5%, #ffffff 5%, #f2f2f2 5%, #f2f2f2 60%, #ffffff 60%, #ffffff 100%);
+		padding-left: 5%;
+		padding-right: 0;
        }
     }
     .aboutme-ImageBox {
@@ -723,6 +725,7 @@
     @media only screen and (max-width: 768px) {
     .aboutme-ImageBox {
         grid-area: 1 / 1 / 2 / 2;
+		background: none;
        }
     }
     .aboutme-ImageBoxBG{
@@ -730,7 +733,6 @@
         justify-content: flex-end;
     }
     img.aboutme-ImageBoxPC {
-        width: 85%;
     }
     @media only screen and (max-width: 768px) {
     img.aboutme-ImageBoxPC {
@@ -797,7 +799,7 @@
     }
     @media only screen and (max-width: 768px) {
     .aboutmeTxt {
-        padding:unquote('clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem)') 0;
+        padding:unquote('clamp(0.75rem, 0.339rem + 0.86vw, 1.275rem)') 2vw;
         }
     }
     .aboutmeTxtBox{
