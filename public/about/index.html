@@ -118,7 +118,7 @@
 						<span>l</span>
 						<span>s</span>
 					</h2>   
-					<span class="aboutmeSubTitle">活かせるスキル</span>
+					<span class="aboutmeSubTitleskill">活かせるスキル</span>
 				</div>
 			</div>
 			<div class="about-skillscontentsArea">
@@ -137,7 +137,7 @@
 								<p class="about-skills-icontxt">幅広い年代に迷わず操作・使用していただけるような、分かりやすく使いやすいサイトを意識し、構成・デザインをしております。また、クライアント(ご依頼者)さまの人柄や個性がデザインに反映されるよう、細かな点にも配慮しながら行っております。</p>
 							</li>	
 							<li class="about-skills-iconBox">
-								<div class="about-skills-iconTitle">coding</div>
+								<div class="about-skills-iconTitle">Coding</div>
 								<img class="about-skills-iconImg" src="/about/images/skill_03.webp" alt="coding">
 								<p class="about-skills-icontxt">WordPress、HTMLやCSS、Javascriptを使用した動きのあるサイト、複雑性の高いものなど、さまざまな形式のサイトを作成してきました。デザインを忠実に再現すること、また、テストアップ・実装後の修正変更にも柔軟に対応できるようコーディングしております。</p>
 							</li>
@@ -347,7 +347,7 @@
 							気になることやご質問などお気軽にご連絡ください。
 							</div>
 							<div class="footecolumn-Copyright">
-							©Mika Nagaoka-2024
+							©Mika Nagaoka-2025
 							</div>
 						</div>
 					</div>	
@@ -465,12 +465,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <script>
-document.querySelector('.fadeInUp2.active').addEventListener('mouseover', function() {
-  document.querySelector('.aboutmee-contentsBox').classList.add('hovered');
+/*document.querySelector('.fadeInUp2.active').addEventListener('mouseover', function() {
+  document.querySelector('.about-careerLinecolumnBox').classList.add('hovered');
 });
 document.querySelector('.fadeInUp2.active').addEventListener('mouseout', function() {
-  document.querySelector('.aboutme-contentsBox').classList.remove('hovered');
-});
+  document.querySelector('.about-careerLinecolumnBox').classList.remove('hovered');
+});*/
 
 // IntersectionObserverの作成
 const observer = new IntersectionObserver((entries) => {
@@ -479,7 +479,7 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.classList.add('fadeIn');
         }
     });
-}, { threshold: 0.1 });
+}, { threshold: 0.3 });
 
 // about-careerLinecolumnBoxクラスを持つすべての要素を取得
 const targetElements = document.querySelectorAll('.about-careerLinecolumnBox');
