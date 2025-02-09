@@ -29,7 +29,7 @@
     padding: 10rem calc(33px + 5.6%) 10rem 5%; } }
 @media only screen and (max-width: 768px) {
   .about-Top {
-    padding: 4rem 5% 8rem 5%; } }
+    padding: 4rem 5% 6rem 5%; } }
 .about-Top::after {
   content: '';
   position: absolute;
@@ -136,7 +136,7 @@
 
 @media only screen and (max-width: 768px) {
   .profile-contentsBox {
-    padding: 8rem 0; } }
+    padding: 6rem 0; } }
 .profile-contentsBox::after {
   content: '';
   position: absolute;
@@ -322,7 +322,7 @@ p.aboutName-suborderWeb {
 
 @media only screen and (max-width: 768px) {
   .aboutTxt p.about-suborderPlofile {
-    font-size: clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem); } }
+    font-size: clamp(0.7rem, 0.657rem + 0.61vw, 0.95rem); } }
 /*skills*/
 .career-contentsBox {
   padding: 10rem 0;
@@ -398,12 +398,12 @@ img.about-skills-iconImg {
   img.about-skills-iconImg {
     width: 20%; } }
 p.about-skills-icontxt {
-  line-height: 1.9;
+  line-height: 2;
   font-size: clamp(0.687rem, 0.455rem + 0.99vw, 0.93rem); }
 
 @media only screen and (max-width: 768px) {
   p.about-skills-icontxt {
-    font-size: clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem); } }
+    font-size: clamp(0.7rem, 0.657rem + 0.61vw, 0.95rem); } }
 .about-skills-AppSquereBox {
   display: flex;
   flex-wrap: wrap;
@@ -426,7 +426,7 @@ p.about-skills-icontxt {
   .about-skills-AppBox {
     width: calc((100% - 3vw) / 2); } }
 .about-skills-AppTitle {
-  font-size: clamp(0.687rem, 0.455rem + 0.99vw, 0.93rem); }
+  font-size: clamp(0.685rem, 0.493rem + 0.4vw, 0.93rem); }
 
 @media only screen and (max-width: 768px) {
   .about-skills-AppTitle {
@@ -519,7 +519,7 @@ span.careerSubTitle {
 
 @media only screen and (max-width: 768px) {
   span.careerSubTitle {
-    width: clamp(8.8rem, -2.841rem + 49.67vw, 21rem); } }
+    width: clamp(8.8rem, 5.937rem + 12.21vw, 11.8rem); } }
 span.careerSubTitle::before {
   content: '';
   position: absolute;
@@ -583,8 +583,7 @@ span.careerSubTitle::before {
   position: relative;
   padding: 5vw 0 0 5vw;
   width: calc((100% / 2)* 2);
-  flex-direction: column;
-  align-items: flex-end; }
+  flex-direction: column; }
 
 @media only screen and (max-width: 768px) {
   .about-careerTextBox {
@@ -616,7 +615,7 @@ span.careerSubTitle::before {
 
 @media only screen and (max-width: 768px) {
   .about-careerTextBox dl dd {
-    font-size: clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem); } }
+    font-size: clamp(0.7rem, 0.657rem + 0.61vw, 0.95rem); } }
 .about-careerDetailText {
   max-height: 0;
   overflow: hidden;

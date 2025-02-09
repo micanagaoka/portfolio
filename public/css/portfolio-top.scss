@@ -731,7 +731,7 @@
 	}
     @media only screen and (max-width: 768px) {
     .aboutme-columnWidth {
-		grid-template-columns: 40% 60%;
+		grid-template-columns: 50% 50%;
        }
     }
     .aboutme-ImageBox {
@@ -848,6 +848,13 @@
 		flex-direction: row;
        }
     }
+	@media only screen and (max-width: 576px) {
+    .aboutName {
+        align-items: flex-start;
+		flex-direction: column;
+		justify-content: flex-end;
+		}
+    }
     .aboutName span{
         font-size: unquote('clamp(0.75rem, 0.652rem + 0.2vw, 0.875rem)');
         margin-left: 1rem;
@@ -857,6 +864,11 @@
         margin-left: .75rem;
         }
     }
+    @media only screen and (max-width: 576px) {
+    .aboutName span{
+        margin-left: 0rem;
+        }
+    } 
     .aboutmeTxtSub span{
         font-size: unquote('clamp(0.875rem, 0.777rem + 0.2vw, 1rem)');
         padding-left: .8rem;
@@ -1040,6 +1052,9 @@
         padding-bottom: 4vh;
         padding-right: calc(33px + 5.6%);
         padding-left: calc(33px + 5.6%);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
     }
     @media only screen and (max-width: 992px) {
         .works-TitleColumn{
@@ -1049,6 +1064,12 @@
     @media only screen and (max-width: 768px) {
     .works-TitleColumn {
        padding-left: 5%;
+       }
+    }
+    @media only screen and (max-width: 576px) {
+    .works-TitleColumn {
+        padding-right: 5%;
+		flex-direction: column;
        }
     }
     .worksTitleH2{
@@ -1124,6 +1145,26 @@
     }
     .worksTitle.animate-h2works span:nth-child(5) {
         transition-delay: 0.36s;
+    }
+	.worksTitlenote {
+		display: flex;
+		align-items: flex-end;
+		font-size: unquote('clamp(0.85rem, 0.772rem + 0.16vw, 0.95rem)');
+		width: 75%;
+	    justify-content: flex-end;
+		line-height: 1.5;
+	}
+    @media only screen and (max-width: 768px) {
+    .worksTitlenote {
+		font-size: unquote('clamp(0.75rem, 0.655rem + 0.41vw, 0.85rem)');
+		width: 65%;
+       }
+    }
+    @media only screen and (max-width: 576px) {
+    .worksTitlenote {
+        width: 100%;
+        margin-top: 2.5vw;
+       }
     }
     .worksListArea {
     }
@@ -1851,6 +1892,7 @@
     @media only screen and (max-width: 768px) {
     .scrollF:after {
         bottom: -85px;
+		height: 78px;
         }
     }
     

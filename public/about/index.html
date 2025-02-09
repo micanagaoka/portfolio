@@ -371,24 +371,21 @@
 document.addEventListener("DOMContentLoaded", function() {
     const letterTop = document.querySelector('.letter-top');
     const letters = document.querySelectorAll('.letter-top span');
-    const backgroundBox = document.querySelector('.mainBackGroundBox'); // 背景ボックスを指定
-
+    const backgroundBox = document.querySelector('.mainBackGroundBox');
     // 背景アニメーションを1秒後に開始
     setTimeout(() => {
-        backgroundBox.classList.add('active'); // 背景ボックスにactiveクラスを追加
-    }, 1000); // 1秒後に背景アニメーションを開始
-
+        backgroundBox.classList.add('active'); 
+    }, 1000); // 1秒後に背景アニメーション開始
     // 文字アニメーションを背景アニメーションが完了して2秒後に開始
     setTimeout(() => {
         letterTop.classList.add('active'); // letter-topにactiveクラスを追加
-
         // 文字アニメーションを開始
         letters.forEach((letter, index) => {
             setTimeout(() => {
-                letter.classList.add('active'); // 各文字にactiveクラスを追加
+                letter.classList.add('active'); 
             }, index * 50); // 各文字ごとに50msの遅延をつけて表示
         });
-    }, 1600); // 2.6秒後（1秒後の背景アニメーション + 1.6秒後）に文字アニメーションを開始
+    }, 1600); // 文字アニメーション開始
 });
 </script>
 <script>
@@ -396,28 +393,24 @@ document.addEventListener("DOMContentLoaded", function() {
 const menuIcon = document.querySelector('.menu-icon');
 const navMenu = document.querySelector('.nav-menu');
 const overlay = document.querySelector('.overlay');
-
 // ハンバーガーメニューのクリックでメニューを表示/非表示
 menuIcon.addEventListener('click', function() {
     menuIcon.classList.toggle('active');
     navMenu.classList.toggle('active');
     overlay.classList.toggle('active');
 });
-
 // メニュー外のオーバーレイをクリックした時にメニューを閉じる
 overlay.addEventListener('click', function() {
     menuIcon.classList.remove('active');
     navMenu.classList.remove('active');
     overlay.classList.remove('active');
 });
-
 // メニューを閉じる時に2番目のバーのスタイルをリセット
 function closeMenu() {
     menuIcon.classList.remove('active'); // ハンバーガーアイコンのスタイルをリセット
     navMenu.classList.remove('active'); // メニューを閉じる
     overlay.classList.remove('active'); // オーバーレイを非表示
 }
-
 // メニューを閉じる際にリセットされるよう、オーバーレイやメニュー外クリックでcloseMenu()を呼ぶ
 overlay.addEventListener('click', closeMenu);
 </script>
@@ -432,7 +425,6 @@ document.addEventListener('DOMContentLoaded', function () {
         rootMargin: '0px 0px -80px 0px',
         threshold: 0,
     };
-
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -449,7 +441,6 @@ document.addEventListener('DOMContentLoaded', function () {
     careerTitleElements.forEach(careerTitle => {
         observer.observe(careerTitle);
     });
-
     // "もっと見る"ボタンのクリックイベント処理
     showMoreBtns.forEach(btn => {
         btn.addEventListener('click', function () {
@@ -465,13 +456,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <script>
-/*document.querySelector('.fadeInUp2.active').addEventListener('mouseover', function() {
-  document.querySelector('.about-careerLinecolumnBox').classList.add('hovered');
-});
-document.querySelector('.fadeInUp2.active').addEventListener('mouseout', function() {
-  document.querySelector('.about-careerLinecolumnBox').classList.remove('hovered');
-});*/
-
 // IntersectionObserverの作成
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -490,7 +474,6 @@ targetElements.forEach(element => {
 });
 
 </script>
-
 </body>
 	<!--end container-->
 </html>

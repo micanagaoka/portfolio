@@ -37,7 +37,7 @@
 }
 @media only screen and (max-width: 768px) {
 	.about-Top {
-		padding:4rem 5% 8rem 5%;
+		padding:4rem 5% 6rem 5%;
 	}
 }
 .about-Top::after {
@@ -154,7 +154,7 @@
 }
 @media only screen and (max-width: 768px) {
 .profile-contentsBox  {
-    padding: 8rem 0;
+    padding: 6rem 0;
 	}
 }
 .profile-contentsBox::after {
@@ -371,7 +371,7 @@ p.aboutName-suborderWeb {
 }
 @media only screen and (max-width: 768px) {
 .aboutTxt p.about-suborderPlofile {
-	font-size: unquote('clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem)');
+	font-size: unquote('clamp(0.7rem, 0.657rem + 0.61vw, 0.95rem)');
    }
 }
 
@@ -470,12 +470,12 @@ img.about-skills-iconImg {
     }
 }
 p.about-skills-icontxt {
-    line-height: 1.9;
+    line-height: 2;
     font-size: unquote('clamp(0.687rem, 0.455rem + 0.99vw, 0.93rem)');
 }
 @media only screen and (max-width: 768px) {
 p.about-skills-icontxt {
-    font-size: unquote('clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem)');
+    font-size: unquote('clamp(0.7rem, 0.657rem + 0.61vw, 0.95rem)');
     }
 }
 .about-skills-AppSquereBox {
@@ -504,7 +504,7 @@ p.about-skills-icontxt {
 	}
 }
 .about-skills-AppTitle {
-    font-size: unquote('clamp(0.687rem, 0.455rem + 0.99vw, 0.93rem)');
+    font-size: unquote('clamp(0.685rem, 0.493rem + 0.4vw, 0.93rem)');
 }
 @media only screen and (max-width: 768px) {
 .about-skills-AppTitle {
@@ -612,7 +612,7 @@ span.careerSubTitle {
 }
 @media only screen and (max-width: 768px) {
 	span.careerSubTitle {
-	width: unquote('clamp(8.8rem, -2.841rem + 49.67vw, 21rem)');
+	width: unquote('clamp(8.8rem, 5.937rem + 12.21vw, 11.8rem)');
     }
 }
 span.careerSubTitle::before {
@@ -691,7 +691,6 @@ span.careerSubTitle::before {
 	padding: 5vw 0 0 5vw;
 	width: calc((100% / 2)* 2);
 	flex-direction: column;
-	align-items: flex-end;
 }
 @media only screen and (max-width: 768px) {
 .about-careerTextBox {
@@ -729,7 +728,7 @@ span.careerSubTitle::before {
 }
 @media only screen and (max-width: 768px) {
 .about-careerTextBox dl dd {
-    font-size: unquote('clamp(0.813rem, 0.681rem + 0.56vw, 0.95rem)');
+    font-size: unquote('clamp(0.7rem, 0.657rem + 0.61vw, 0.95rem)');
 	}
 }
 .about-careerDetailText {
@@ -741,6 +740,7 @@ span.careerSubTitle::before {
 .about-careerDetailText.open {
     max-height: 300px; /* 展開時の高さ */
 }
+
 .show-more-btn {
     margin-top: 10px;
     cursor: pointer;
